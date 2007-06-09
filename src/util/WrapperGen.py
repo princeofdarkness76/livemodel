@@ -29,11 +29,16 @@ def generate(folder, dev):
     for index in range(len(dev.parameters)):
         param = dev.parameters[index]
         methodName = generateMethodName(param.name)
+        
+        # a rough guide to bad method names
         if not methodName.isalnum():
             print methodName + " of " + className + " isnt alphanumeric"
-        fout.write("\tdef " + generateMethodName(param.name) + "(self,value):\n")
-        fout.write("\t\tself.params[" + str(index) + "].value = value\n\n")
-
+        
+        fout.write("\t" + "def " + generateMethodName(param.name) + "(self,value=None):\n")
+        fout.write("\t\t" + "if value != None:\n");
+        fout.write("\t\t\t" + "self.params[" + str(index) + "].value = value\n");
+        fout.write("\t\t" + "return self.params[" + str(index) + "].value\n\n");
+        
     fout.close()
     print "wrote " + dev.name
     
