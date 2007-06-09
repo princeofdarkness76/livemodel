@@ -1,0 +1,31 @@
+0		Device On
+1		PreDelay
+2		In LowCut On
+3		In HighCut On
+4		In Freqency
+5		In Width
+6		ER Spin On
+7		ER Spin Rate
+8		ER Spin Amount
+9		ER Shape
+10		HiShelf On
+11		HiShelf Freq
+12		HiShelf Gain
+13		LowShelf On
+14		LowShelf Freq
+15		LowShelf Gain
+16		Chorus On
+17		Chorus Rate
+18		Chorus Amount
+19		DecayTime
+20		Density
+21		Scale
+22		Freeze On
+23		Flat On
+24		Cut On
+25		Room Size
+26		Stereo Image
+27		Quality
+28		ER Level
+29		Diffuse Level
+30		Dry/Wet

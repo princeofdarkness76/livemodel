@@ -1,0 +1,10 @@
+0		Device On
+1		EQ Freq
+2		EQ Width
+3		Delay Mode
+4		Beat Delay
+5		Beat Swing
+6		Time Delay
+7		Feedback
+8		Dry/Wet
+9		Freeze

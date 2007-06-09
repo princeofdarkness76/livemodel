@@ -1,0 +1,6 @@
+0		Device On
+1		Threshold
+2		Attack
+3		Hold
+4		Release
+5		Floor

@@ -1,0 +1,18 @@
+0		Device On
+1		Chance
+2		Interval
+3		Offset
+4		Grid
+5		Block Triplets
+6		Variation
+7		Variation Type
+8		Gate
+9		Decay
+10		Pitch Decay
+11		Pitch
+12		Mix Type
+13		Volume
+14		Filter On
+15		Mid Freq
+16		EQ Width
+17		Repeat

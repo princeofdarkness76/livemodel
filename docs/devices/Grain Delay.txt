@@ -1,0 +1,11 @@
+0		Device On
+1		Spray
+2		Frequency
+3		Pitch
+4		Random
+5		Feedback
+6		DryWet
+7		Delay Mode
+8		Beat Delay
+9		Beat Swing
+10		Time Delay

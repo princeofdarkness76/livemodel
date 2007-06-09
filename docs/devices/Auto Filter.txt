@@ -1,0 +1,18 @@
+0		Device On
+1		Filter Type
+2		Frequency
+3		Resonance
+4		Env. Modulation
+5		Env. Attack
+6		Env. Release
+7		LFO Amount
+8		LFO Waveform
+9		LFO Frequency
+10		LFO Sync
+11		LFO Sync Rate
+12		LFO Stereo Mode
+13		LFO Spin
+14		LFO Phase
+15		LFO Offset
+16		LFO Quantize On
+17		LFO Quantize Rate

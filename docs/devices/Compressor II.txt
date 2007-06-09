@@ -1,0 +1,12 @@
+0		Device On
+1		Threshold
+2		Ratio
+3		Attack
+4		Release
+5		Output Gain
+6		Freq
+7		SideGain
+8		SideOn
+9		PeakOn
+10		LookAhead
+11		SideMode

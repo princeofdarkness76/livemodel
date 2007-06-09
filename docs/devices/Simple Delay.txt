@@ -1,0 +1,12 @@
+0		Device On
+1		Link On
+2		L Delay Mode
+3		L Beat Delay
+4		L Beat Swing
+5		L Time Delay
+6		R Delay Mode
+7		R Beat Delay
+8		R Beat Swing
+9		R Time Delay
+10		Feedback
+11		Dry/Wet

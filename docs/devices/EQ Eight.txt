@@ -1,0 +1,83 @@
+0		Device On
+1		Output Gain
+2		Scale
+3		1 Filter On A
+4		1 Filter Type A
+5		1 Frequency A
+6		1 Gain A
+7		1 Resonance A
+8		1 Filter On B
+9		1 Filter Type B
+10		1 Frequency B
+11		1 Gain B
+12		1 Resonance B
+13		2 Filter On A
+14		2 Filter Type A
+15		2 Frequency A
+16		2 Gain A
+17		2 Resonance A
+18		2 Filter On B
+19		2 Filter Type B
+20		2 Frequency B
+21		2 Gain B
+22		2 Resonance B
+23		3 Filter On A
+24		3 Filter Type A
+25		3 Frequency A
+26		3 Gain A
+27		3 Resonance A
+28		3 Filter On B
+29		3 Filter Type B
+30		3 Frequency B
+31		3 Gain B
+32		3 Resonance B
+33		4 Filter On A
+34		4 Filter Type A
+35		4 Frequency A
+36		4 Gain A
+37		4 Resonance A
+38		4 Filter On B
+39		4 Filter Type B
+40		4 Frequency B
+41		4 Gain B
+42		4 Resonance B
+43		5 Filter On A
+44		5 Filter Type A
+45		5 Frequency A
+46		5 Gain A
+47		5 Resonance A
+48		5 Filter On B
+49		5 Filter Type B
+50		5 Frequency B
+51		5 Gain B
+52		5 Resonance B
+53		6 Filter On A
+54		6 Filter Type A
+55		6 Frequency A
+56		6 Gain A
+57		6 Resonance A
+58		6 Filter On B
+59		6 Filter Type B
+60		6 Frequency B
+61		6 Gain B
+62		6 Resonance B
+63		7 Filter On A
+64		7 Filter Type A
+65		7 Frequency A
+66		7 Gain A
+67		7 Resonance A
+68		7 Filter On B
+69		7 Filter Type B
+70		7 Frequency B
+71		7 Gain B
+72		7 Resonance B
+73		8 Filter On A
+74		8 Filter Type A
+75		8 Frequency A
+76		8 Gain A
+77		8 Resonance A
+78		8 Filter On B
+79		8 Filter Type B
+80		8 Frequency B
+81		8 Gain B
+82		8 Resonance B

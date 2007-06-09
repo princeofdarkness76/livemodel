@@ -1,0 +1,17 @@
+0		Device On
+1		Dry/Wet
+2		Drive
+3		Output
+4		Type
+5		Base
+6		Color
+7		Frequency
+8		Width
+9		Depth
+10		Soft Clip
+11		WS Drive
+12		WS Lin
+13		WS Curve
+14		WS Damp
+15		WS Period
+16		WS Depth

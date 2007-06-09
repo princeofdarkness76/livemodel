@@ -1,0 +1,10 @@
+0		Device On
+1		Dry/Wet
+2		Drive
+3		Output
+4		Bias
+5		Envelope
+6		Attack
+7		Release
+8		Tone
+9		Tube Type

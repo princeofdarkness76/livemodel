@@ -1,0 +1,9 @@
+0		Device On
+1		Gain
+2		Panorama
+3		Signal Source
+4		StereoSeparation
+5		PhaseInvertL
+6		PhaseInvertR
+7		Mute
+8		BlockDc

@@ -1,0 +1,35 @@
+0		Device On
+1		1 Input On
+2		1 EQ On
+3		1 EQ Freq
+4		1 EQ Width
+5		1 Delay Mode
+6		1 Beat Delay
+7		1 Beat Swing
+8		1 Time Delay
+9		1 Feedback
+10		1 Pan
+11		1 Volume
+12		2 Input On
+13		2 EQ On
+14		2 EQ Freq
+15		2 EQ Width
+16		2 Delay Mode
+17		2 Beat Delay
+18		2 Beat Swing
+19		2 Time Delay
+20		2 Feedback
+21		2 Pan
+22		2 Volume
+23		3 Input On
+24		3 EQ On
+25		3 EQ Freq
+26		3 EQ Width
+27		3 Delay Mode
+28		3 Beat Delay
+29		3 Beat Swing
+30		3 Time Delay
+31		3 Feedback
+32		3 Pan
+33		3 Volume
+34		Dry

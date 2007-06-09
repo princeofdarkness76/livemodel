@@ -1,0 +1,13 @@
+0		Device On
+1		Shift1
+2		Velocity1
+3		Shift2
+4		Velocity2
+5		Shift3
+6		Velocity3
+7		Shift4
+8		Velocity4
+9		Shift5
+10		Velocity5
+11		Shift6
+12		Velocity6
