@@ -1,0 +1,10 @@
+0		Device On
+1		GainLo
+2		GainMid
+3		GainHi
+4		FreqLo
+5		FreqHi
+6		LowOn
+7		MidOn
+8		HighOn
+9		Slope

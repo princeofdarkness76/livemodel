@@ -1,0 +1,6 @@
+0		Device On
+1		Bit On
+2		Bit Depth
+3		Sample Mode
+4		Sample Hard
+5		Sample Soft

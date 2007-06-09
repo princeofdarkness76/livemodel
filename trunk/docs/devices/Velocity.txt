@@ -1,0 +1,10 @@
+0		Device On
+1		Drive
+2		Compand
+3		Random
+4		Mode
+5		Operation
+6		Out Hi
+7		Out Low
+8		Range
+9		Lowest

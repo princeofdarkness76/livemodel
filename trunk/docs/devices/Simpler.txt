@@ -1,0 +1,49 @@
+0		Device On
+1		Snap
+2		S Start
+3		S Length
+4		S Loop On
+5		S Loop Length
+6		S Loop Fade
+7		Spread
+8		Glide Mode
+9		Glide Time
+10		Transpose
+11		Detune
+12		Pitch < LFO
+13		Pe < Env
+14		Pe Attack
+15		Pe Decay
+16		Pe Sustain
+17		Pe Release
+18		Volume
+19		Vol < Vel
+20		Vol < LFO
+21		Pan
+22		Pan < Rnd
+23		Pan < LFO
+24		Ve Attack
+25		Ve Decay
+26		Ve Sustain
+27		Ve Release
+28		Filter On
+29		Filter Type
+30		Filter Freq
+31		Filter Res
+32		Fe < Env
+33		Fe Attack
+34		Fe Decay
+35		Fe Sustain
+36		Fe Release
+37		Filt < Key
+38		Filt < Vel
+39		Filt < LFO
+40		L On
+41		L Wave
+42		L Sync
+43		L Rate
+44		L Sync Rate
+45		L R < Key
+46		L Attack
+47		L Retrig
+48		L Offset

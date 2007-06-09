@@ -1,0 +1,31 @@
+0		Device On
+1		Filter On
+2		Frequency
+3		Filter Type
+4		Mode
+5		Decay
+6		Const
+7		Color
+8		Width
+9		Dry/Wet
+10		Global Gain
+11		I On
+12		I Note
+13		I Tune
+14		I Gain
+15		II On
+16		II Pitch
+17		II Tune
+18		II Gain
+19		III On
+20		III Pitch
+21		III Tune
+22		III Gain
+23		IV On
+24		IV Pitch
+25		IV Tune
+26		IV Gain
+27		V On
+28		V Pitch
+29		V Tune
+30		V Gain

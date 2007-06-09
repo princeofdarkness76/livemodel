@@ -1,0 +1,14 @@
+0		Device On
+1		Tracing On
+2		Tracing Drive
+3		Tracing Freq.
+4		Tracing Width
+5		Pinch On
+6		Pinch Drive
+7		Pinch Freq.
+8		Pinch Width
+9		Global Drive
+10		Pinch Soft On
+11		Pinch Mono On
+12		Crackle Density
+13		Crackle Volume

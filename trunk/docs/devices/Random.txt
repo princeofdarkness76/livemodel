@@ -1,0 +1,5 @@
+0		Device On
+1		Chance
+2		Choices
+3		Scale
+4		Sign

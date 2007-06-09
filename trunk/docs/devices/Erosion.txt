@@ -1,0 +1,5 @@
+0		Device On
+1		Mode
+2		Frequency
+3		Amount
+4		Width

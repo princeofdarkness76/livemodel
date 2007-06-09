@@ -1,0 +1,19 @@
+0		Device On
+1		Dry/Wet
+2		Delay Time
+3		Feedback
+4		Polarity
+5		LFO Amount
+6		Hi Pass
+7		Env. Modulation
+8		Env. Attack
+9		Env. Release
+10		LFO Waveform
+11		Frequency
+12		Sync
+13		Sync Rate
+14		LFO Stereo Mode
+15		LFO Spin
+16		LFO Phase
+17		LFO Offset
+18		LFO Width (Random)

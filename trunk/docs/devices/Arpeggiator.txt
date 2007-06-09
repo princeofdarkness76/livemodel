@@ -1,0 +1,20 @@
+0		Device On
+1		Style
+2		Offset
+3		Repeats
+4		Sync On
+5		Synced Rate
+6		Groove
+7		Free Rate
+8		Gate
+9		Retrigger Mode
+10		Ret. Interval
+11		Hold On
+12		Tranpose Mode
+13		Tranpose Key
+14		Transp. Steps
+15		Transp. Dist.
+16		Velocity On
+17		Vel. Retrigger
+18		Velocity Decay
+19		Velocity Target

@@ -1,0 +1,12 @@
+0		Device On
+1		Delay 1 Time
+2		Delay 1 HiPass
+3		Delay 2 Time
+4		Delay 2 Mode
+5		Link On
+6		LFO Amount
+7		LFO Rate
+8		LFO Extend On
+9		Feedback
+10		Polarity
+11		Dry/Wet

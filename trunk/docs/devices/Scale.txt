@@ -1,0 +1,18 @@
+0		Device On
+1		Base
+2		Transpose
+3		Fold
+4		Lowest
+5		Range
+6		Map 0
+7		Map 1
+8		Map 2
+9		Map 3
+10		Map 4
+11		Map 5
+12		Map 6
+13		Map 7
+14		Map 8
+15		Map 9
+16		Map 10
+17		Map 11

@@ -1,0 +1,165 @@
+0		Device On
+1		Algorithm
+2		HiQ
+3		Transpose
+4		PB Range
+5		Volume
+6		Panorama
+7		Pan < Key
+8		Pan < Rnd
+9		D Feedback
+10		Tone
+11		Spread
+12		Glide On
+13		Glide Time
+14		A On
+15		A Coarse
+16		A Fine
+17		A Freq<Vel
+18		A Quantize
+19		A Fix On 
+20		A Fix Freq
+21		A Fix Freq Mul
+22		A Level
+23		A Phase
+24		Pe to Osc-A
+25		A Lev < Vel
+26		A Lev < Key
+27		A Wave
+28		LFO to Osc-A
+29		Ae Attack
+30		Ae Init
+31		Ae Decay
+32		Ae Peak
+33		Ae Sustain
+34		Ae Release
+35		Ae Mode
+36		Ae Loop
+37		Ae Retrig
+38		Ae R < Vel
+39		B On
+40		B Coarse
+41		B Fine
+42		B Freq<Vel
+43		B Quantize
+44		B Fix On 
+45		B Fix Freq
+46		B Fix Freq Mul
+47		B Level
+48		B Phase
+49		Pe to Osc-B
+50		B Lev < Vel
+51		B Lev < Key
+52		B Wave
+53		LFO to Osc-B
+54		Be Attack
+55		Be Init
+56		Be Decay
+57		Be Peak
+58		Be Sustain
+59		Be Release
+60		Be Mode
+61		Be Loop
+62		Be Retrig
+63		Be R < Vel
+64		C On
+65		C Coarse
+66		C Fine
+67		C Freq<Vel
+68		C Quantize
+69		C Fix On 
+70		C Fix Freq
+71		C Fix Freq Mul
+72		C Level
+73		C Phase
+74		Pe to Osc-C
+75		C Lev < Vel
+76		C Lev < Key
+77		C Wave
+78		LFO to Osc-C
+79		Ce Attack
+80		Ce Init
+81		Ce Decay
+82		Ce Peak
+83		Ce Sustain
+84		Ce Release
+85		Ce Mode
+86		Ce Loop
+87		Ce Retrig
+88		Ce R < Vel
+89		D On
+90		D Coarse
+91		D Fine
+92		D Freq<Vel
+93		D Quantize
+94		D Fix On 
+95		D Fix Freq
+96		D Fix Freq Mul
+97		D Level
+98		D Phase
+99		Pe to Osc-D
+100		D Lev < Vel
+101		D Lev < Key
+102		D Wave
+103		LFO to Osc-D
+104		De Attack
+105		De Init
+106		De Decay
+107		De Peak
+108		De Sustain
+109		De Release
+110		De Mode
+111		De Loop
+112		De Retrig
+113		De R < Vel
+114		Time
+115		Time < Key
+116		Pe On
+117		Pe Attack
+118		Pe Init
+119		Pe Decay
+120		Pe Peak
+121		Pe Sustain
+122		Pe Release
+123		Pe Mode
+124		Pe Loop
+125		Pe Retrig
+126		Pe R < Vel
+127		Pe Amount
+128		LFO On
+129		LFO Type
+130		LFO Range
+131		LFO Rate
+132		LFO Sync
+133		LFO R < K
+134		LFO Mod
+135		LFO < Vel
+136		Pe To LFO
+137		Le Attack
+138		Le Init
+139		Le Decay
+140		Le Peak
+141		Le Sustain
+142		Le Release
+143		Le Mode
+144		Le Loop
+145		Le Retrig
+146		Le R < Vel
+147		Filter On
+148		Filter Type
+149		Filter Freq
+150		Filter Res
+151		Filt < Vel
+152		Filt < Key
+153		Fe Amount
+154		Filt < LFO
+155		Fe Attack
+156		Fe Init
+157		Fe Decay
+158		Fe Peak
+159		Fe Sustain
+160		Fe Release
+161		Fe Mode
+162		Fe Loop
+163		Fe Retrig
+164		Fe R < Vel

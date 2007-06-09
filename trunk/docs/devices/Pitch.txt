@@ -1,0 +1,4 @@
+0		Device On
+1		Pitch
+2		Lowest
+3		Range

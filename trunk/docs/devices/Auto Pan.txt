@@ -1,0 +1,13 @@
+0		Device On
+1		LFO Type
+2		Amount
+3		Frequency
+4		Sync Rate
+5		Phase
+6		Spin
+7		Stereo Mode
+8		Offset
+9		Waveform
+10		Shape
+11		Width (Random)
+12		Invert

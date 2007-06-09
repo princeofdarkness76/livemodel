@@ -1,0 +1,9 @@
+0		Device On
+1		Trigger Mode
+2		Sync On
+3		Synced Length
+4		Time Length
+5		Gate
+6		On/Off-Balance
+7		Decay Time
+8		Decay Key Scale
