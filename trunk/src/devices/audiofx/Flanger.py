@@ -4,60 +4,98 @@ class Flanger:
 		self.device = device
 		self.params = device.parameters
 
-	def deviceOn(self,value):
-		self.params[0].value = value
+	def deviceOn(self,value=None):
+		if value != None:
+			self.params[0].value = value
+		return self.params[0].value
 
-	def dryWet(self,value):
-		self.params[1].value = value
+	def dryWet(self,value=None):
+		if value != None:
+			self.params[1].value = value
+		return self.params[1].value
 
-	def delayTime(self,value):
-		self.params[2].value = value
+	def delayTime(self,value=None):
+		if value != None:
+			self.params[2].value = value
+		return self.params[2].value
 
-	def feedback(self,value):
-		self.params[3].value = value
+	def feedback(self,value=None):
+		if value != None:
+			self.params[3].value = value
+		return self.params[3].value
 
-	def polarity(self,value):
-		self.params[4].value = value
+	def polarity(self,value=None):
+		if value != None:
+			self.params[4].value = value
+		return self.params[4].value
 
-	def lfoAmount(self,value):
-		self.params[5].value = value
+	def lfoAmount(self,value=None):
+		if value != None:
+			self.params[5].value = value
+		return self.params[5].value
 
-	def hiPass(self,value):
-		self.params[6].value = value
+	def hiPass(self,value=None):
+		if value != None:
+			self.params[6].value = value
+		return self.params[6].value
 
-	def envModulation(self,value):
-		self.params[7].value = value
+	def envModulation(self,value=None):
+		if value != None:
+			self.params[7].value = value
+		return self.params[7].value
 
-	def envAttack(self,value):
-		self.params[8].value = value
+	def envAttack(self,value=None):
+		if value != None:
+			self.params[8].value = value
+		return self.params[8].value
 
-	def envRelease(self,value):
-		self.params[9].value = value
+	def envRelease(self,value=None):
+		if value != None:
+			self.params[9].value = value
+		return self.params[9].value
 
-	def lfoWaveform(self,value):
-		self.params[10].value = value
+	def lfoWaveform(self,value=None):
+		if value != None:
+			self.params[10].value = value
+		return self.params[10].value
 
-	def frequency(self,value):
-		self.params[11].value = value
+	def frequency(self,value=None):
+		if value != None:
+			self.params[11].value = value
+		return self.params[11].value
 
-	def sync(self,value):
-		self.params[12].value = value
+	def sync(self,value=None):
+		if value != None:
+			self.params[12].value = value
+		return self.params[12].value
 
-	def syncRate(self,value):
-		self.params[13].value = value
+	def syncRate(self,value=None):
+		if value != None:
+			self.params[13].value = value
+		return self.params[13].value
 
-	def lfoStereoMode(self,value):
-		self.params[14].value = value
+	def lfoStereoMode(self,value=None):
+		if value != None:
+			self.params[14].value = value
+		return self.params[14].value
 
-	def lfoSpin(self,value):
-		self.params[15].value = value
+	def lfoSpin(self,value=None):
+		if value != None:
+			self.params[15].value = value
+		return self.params[15].value
 
-	def lfoPhase(self,value):
-		self.params[16].value = value
+	def lfoPhase(self,value=None):
+		if value != None:
+			self.params[16].value = value
+		return self.params[16].value
 
-	def lfoOffset(self,value):
-		self.params[17].value = value
+	def lfoOffset(self,value=None):
+		if value != None:
+			self.params[17].value = value
+		return self.params[17].value
 
-	def lfoWidthRandom(self,value):
-		self.params[18].value = value
+	def lfoWidthRandom(self,value=None):
+		if value != None:
+			self.params[18].value = value
+		return self.params[18].value
 

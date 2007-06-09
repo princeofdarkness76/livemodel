@@ -4,63 +4,103 @@ class Arpeggiator:
 		self.device = device
 		self.params = device.parameters
 
-	def deviceOn(self,value):
-		self.params[0].value = value
+	def deviceOn(self,value=None):
+		if value != None:
+			self.params[0].value = value
+		return self.params[0].value
 
-	def style(self,value):
-		self.params[1].value = value
+	def style(self,value=None):
+		if value != None:
+			self.params[1].value = value
+		return self.params[1].value
 
-	def offset(self,value):
-		self.params[2].value = value
+	def offset(self,value=None):
+		if value != None:
+			self.params[2].value = value
+		return self.params[2].value
 
-	def repeats(self,value):
-		self.params[3].value = value
+	def repeats(self,value=None):
+		if value != None:
+			self.params[3].value = value
+		return self.params[3].value
 
-	def syncOn(self,value):
-		self.params[4].value = value
+	def syncOn(self,value=None):
+		if value != None:
+			self.params[4].value = value
+		return self.params[4].value
 
-	def syncedRate(self,value):
-		self.params[5].value = value
+	def syncedRate(self,value=None):
+		if value != None:
+			self.params[5].value = value
+		return self.params[5].value
 
-	def groove(self,value):
-		self.params[6].value = value
+	def groove(self,value=None):
+		if value != None:
+			self.params[6].value = value
+		return self.params[6].value
 
-	def freeRate(self,value):
-		self.params[7].value = value
+	def freeRate(self,value=None):
+		if value != None:
+			self.params[7].value = value
+		return self.params[7].value
 
-	def gate(self,value):
-		self.params[8].value = value
+	def gate(self,value=None):
+		if value != None:
+			self.params[8].value = value
+		return self.params[8].value
 
-	def retriggerMode(self,value):
-		self.params[9].value = value
+	def retriggerMode(self,value=None):
+		if value != None:
+			self.params[9].value = value
+		return self.params[9].value
 
-	def retInterval(self,value):
-		self.params[10].value = value
+	def retInterval(self,value=None):
+		if value != None:
+			self.params[10].value = value
+		return self.params[10].value
 
-	def holdOn(self,value):
-		self.params[11].value = value
+	def holdOn(self,value=None):
+		if value != None:
+			self.params[11].value = value
+		return self.params[11].value
 
-	def tranposeMode(self,value):
-		self.params[12].value = value
+	def tranposeMode(self,value=None):
+		if value != None:
+			self.params[12].value = value
+		return self.params[12].value
 
-	def tranposeKey(self,value):
-		self.params[13].value = value
+	def tranposeKey(self,value=None):
+		if value != None:
+			self.params[13].value = value
+		return self.params[13].value
 
-	def transpSteps(self,value):
-		self.params[14].value = value
+	def transpSteps(self,value=None):
+		if value != None:
+			self.params[14].value = value
+		return self.params[14].value
 
-	def transpDist(self,value):
-		self.params[15].value = value
+	def transpDist(self,value=None):
+		if value != None:
+			self.params[15].value = value
+		return self.params[15].value
 
-	def velocityOn(self,value):
-		self.params[16].value = value
+	def velocityOn(self,value=None):
+		if value != None:
+			self.params[16].value = value
+		return self.params[16].value
 
-	def velRetrigger(self,value):
-		self.params[17].value = value
+	def velRetrigger(self,value=None):
+		if value != None:
+			self.params[17].value = value
+		return self.params[17].value
 
-	def velocityDecay(self,value):
-		self.params[18].value = value
+	def velocityDecay(self,value=None):
+		if value != None:
+			self.params[18].value = value
+		return self.params[18].value
 
-	def velocityTarget(self,value):
-		self.params[19].value = value
+	def velocityTarget(self,value=None):
+		if value != None:
+			self.params[19].value = value
+		return self.params[19].value
 
