@@ -48,7 +48,7 @@ class DeviceBase(object):
         for i in range(len(patch)):
             self.params[i].value = patch[i]
             
-    def interpolatePatches(self,a,b,amount):
+    def interp(self,a,b,amount):
         """ 
         Linear patch interpolation. a and b are patch indexes.
         If one patch is empty then the other is loaded.
@@ -77,6 +77,25 @@ class DeviceBase(object):
         for i in range(len(patchA)):
             diff = patchB[i] - patchA[i]
             self.params[i].value = patchA[i] + (diff * amount)
+            
+    def bilinearInterp(self,a,b,c,d,x,y):
+        """
+        Bilinear interpolation between four patches, considered to be the four corners of the parameter
+        space which ranges from 0 -> along both axes.
+        a,b,c and d are patch indices. x and y are the co-ordinate values in the parameter space
+        """
+        patchA = self.patches[a]
+        patchB = self.patches[b]
+        patchC = self.patches[c]
+        patchD = self.patches[d]
+
+        x1 = 1 - x
+        y1 = 1 - y
+        
+        for i in range(len(patchA)):
+            f = (patchA[i] * y1) + (patchB[i] * y)
+            g = (patchC[i] * y1) + (patchD[i] * y)
+            self.params[i].value = (f * x1) + (g * x)
             
     def randomize(self,includeQuantized = 0):
         for param in self.params:
