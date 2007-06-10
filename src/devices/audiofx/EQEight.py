@@ -1,8 +1,9 @@
-class EQEight:
+from LiveModel import DeviceBase
+
+class EQEight(DeviceBase):
 
 	def __init__(self,device):
-		self.device = device
-		self.params = device.parameters
+		DeviceBase.__init__(self, device)
 
 	def getDeviceOn(self):
 		return self.params[0].value
