@@ -10,6 +10,7 @@ def generateAll():
     global genDir
     tracks = Live.Application.get_application().get_document().tracks
     for track in tracks:
+        print "Generate devices from track " + track.name
         for device in track.devices:
             generate(os.path.join(genDir, track.name), device)
         
@@ -38,10 +39,10 @@ def generate(outDir, dev):
 def createClassHeader(className):
     """Create class header and constructor function"""
     
-    header = createLine(0,"class " + className + ":",1)
+    header = createLine(0,"from LiveModel import DeviceBase",1)
+    header += createLine(0,"class " + className + "(DeviceBase):",1)
     header += createLine(1,"def __init__(self,device):")
-    header += createLine(2,"self.device = device")
-    header += createLine(2,"self.params = device.parameters",1)
+    header += createLine(2,"DeviceBase.__init__(self, device)",1)
 
     return header
 
