@@ -105,9 +105,6 @@ class LiveFlash:
             except:
                 #No one connected in this iteration
                 pass
-            else:
-                #Yay! Someone connected! Send them the banner and first prompt.
-                self.clientConnection.send("Welcome to the Ableton Live Flash Interface" + "\x00")
                 
         else:
             #Someone's connected, so lets interact with them.
