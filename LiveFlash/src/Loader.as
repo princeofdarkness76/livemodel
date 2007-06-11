@@ -21,26 +21,8 @@
 
 class Loader 
 {
-	private var ui:MovieClip;
-	private var app:Application;
-	private var loader:MovieClipLoader;
-	
-	public function Loader(mc:MovieClip)
-	{
-		ui = mc.createEmptyMovieClip("ui",1);
-		loader = new MovieClipLoader();
-		loader.addListener(this);
-		loader.loadClip("UI.swf",ui);
-	}
-
-	private function onLoadInit()
-	{
-		trace("UI Loaded");
-		app = new Application(ui);	
-	}
-		
 	public static function main()
 	{
-		var l:Loader = new Loader(_root);
+		var app:Application = new Application(_root);
 	}	
 }
