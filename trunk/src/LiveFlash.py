@@ -24,13 +24,17 @@
 import Live
 import sys, StringIO, socket, code
 from LiveUtils import *
+from _Generic.consts import *
 import Command
+import DeviceManager
 
 class LiveFlash:
     __module__ = __name__
     __doc__ = "Main class that establishes the Live Flash Socket Handler\n"
 
     def __init__(self, c_instance):
+        c_instance.show_message("Welcome to LiveFlash")
+        
         self._LiveFlash__c_instance = c_instance
 
         self.flashSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -38,13 +42,15 @@ class LiveFlash:
         self.flashSocket.setblocking(False)
         self.flashSocket.listen(1)
         self.clientConnection = None
-        self.commandHandler = Command.FlashCommands()
+        self.deviceManager = DeviceManager.DeviceManager(self)
+        self.commandHandler = Command.FlashCommands(self.deviceManager)
         self.bufsize = 4096
         
         self.command = ""
+        self.last_cc = ""
+        self.midi_message = ""
         
     def disconnect(self):
-
         self.flashSocket.close()
 
     def connect_script_instances(self, instanciated_scripts):
@@ -55,6 +61,9 @@ class LiveFlash:
         """
         return
 
+    def show_message(self,msg):
+        self._LiveFlash__c_instance.show_message(msg)
+        
     def application(self):
         """returns a reference to the application that we are running in"""
         return Live.Application.get_application()
@@ -83,6 +92,7 @@ class LiveFlash:
         your build_midi_map function. For performance reasons this is only
         called once per GUI frame.
         """
+        print "request_rebuild_midi_map"
         return
 
     def build_midi_map(self, midi_map_handle):
@@ -92,6 +102,7 @@ class LiveFlash:
         (see 'request_rebuild_midi_map' above) or when due to a change in Lives internal state,
         a rebuild is needed.
         """
+        Live.MidiMap.forward_midi_cc(self.handle(), midi_map_handle, 5, 5)
         return
     
     def update_display(self):
@@ -105,19 +116,22 @@ class LiveFlash:
             except:
                 #No one connected in this iteration
                 pass
-                
-        else:
-            #Someone's connected, so lets interact with them.
-            try:
-                #If the client has typed anything, get it
-                self.buffer += self.clientConnection.recv(self.bufsize)
-            except:
-                #Nope they haven't typed anything yet
-                self.buffer = "" #
-
-            self.processBuffer()
+            else:
+                self._LiveFlash__c_instance.show_message("Flash connected. Have fun!")
             
     def processBuffer(self):
+        """
+        Grab any data sent from the client and dispatch it to the command handler
+        for processing
+        """
+        try:
+            #If the client has typed anything, get it
+            self.buffer += self.clientConnection.recv(self.bufsize)
+        except:
+            #Nope they haven't typed anything yet
+            self.buffer = "" #
+        
+        # loop through the buffer looking for end of message characters (zero byte)
         while(self.buffer.find("\x00") > -1):
             eom = self.buffer.find("\x00")
             message = self.buffer[:eom]
@@ -134,9 +148,27 @@ class LiveFlash:
         Use this function to send MIDI events through Live to the _real_ MIDI devices 
         that this script is assigned to.
         """
-        pass
+        print "send_midi"
     
     def receive_midi(self, midi_bytes):
+        if (((midi_bytes[0] & 240) == NOTE_ON_STATUS) or ((midi_bytes[0] & 240) == NOTE_OFF_STATUS)):
+            channel = (midi_bytes[0] & 15)
+            note = midi_bytes[1]
+            velocity = midi_bytes[2]
+            self.handle_midi_note(channel,note,velocity)
+        elif ((midi_bytes[0] & 240) == CC_STATUS):
+            channel = (midi_bytes[0] & 15)
+            cc_no = midi_bytes[1]
+            cc_value = midi_bytes[2]
+            self.handle_midi_cc(cc_no,cc_value)
+        else:
+            assert False, ('unknown MIDI message %s' % str(midi_bytes))
+
+    def handle_midi_cc(self,cc_no,cc_value):     
+        if self.clientConnection:
+            self.processBuffer()
+    
+    def handle_midi_note(self,channel,note,velocity):
         return
     
     def can_lock_to_devices(self):
