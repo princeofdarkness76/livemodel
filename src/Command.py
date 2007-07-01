@@ -21,11 +21,11 @@
 
 import Live
 from LiveUtils import *
-import LiveModel
+import DeviceManager
 
 class FlashCommands:
     
-    def __init__(self):
+    def __init__(self, deviceManager):
         self.Live = Live.Application.get_application().get_document()
         self.callbackManager = CallbackManager()
         
@@ -37,15 +37,22 @@ class FlashCommands:
         
         # Device Commands
         self.callbackManager.add(self.storePatch,"store")
+        self.callbackManager.add(self.loadPatch,"load")   
         self.callbackManager.add(self.interp,"interp")
         self.callbackManager.add(self.blerp,"blerp")
         self.callbackManager.add(self.randomize,"rnd")
         
-        self.deviceManager = DeviceManager()
+        self.deviceManager = deviceManager
         
     def handleCommand(self,command):
         parts = command.split(" ")
-        return self.callbackManager.dispatch(parts)
+        res = self.callbackManager.dispatch(parts)
+        if res == -1:
+            return "Command not found"
+        elif res == -2:
+            return "Error in command"
+        else:
+            return res
 
     def numTracks(self,cmd):
         return len(getTracks())
@@ -70,13 +77,19 @@ class FlashCommands:
             return "trackID out of range"    
         
     def bindDevice(self,cmd):
-        if(len(cmd) != 3):
-            return "Bind requires 2 arguments : trackID deviceID"
+        if(len(cmd) < 3):
+            return "Bind requires 2 or 3 arguments : trackID deviceID [UID]"
         
         trackNum = int(cmd[1])
         deviceNum = int(cmd[2])
-        dev = LiveModel.DeviceBase(getTrack(trackNum).devices[deviceNum])
-        return "UID " + str(self.deviceManager.addDevice(dev))
+        
+        dev = self.deviceManager.createDevice(trackNum,deviceNum)
+        
+        if(len(cmd) == 4):
+            return "UID " + str(self.deviceManager.addDevice(dev,int(cmd[3]))) 
+        else:
+            return "UID " + str(self.deviceManager.addDevice(dev))
+        
     
     def storePatch(self,cmd):
         if(len(cmd) != 3):
@@ -134,21 +147,6 @@ class FlashCommands:
         device.bilinearInterp(patchA,patchB,patchC,patchD,x,y)
         return "Blerp " + cmd[2] + "," + cmd[3] + "," + cmd[4] + "," + cmd[5] + " by " + cmd[6] + "," + cmd[7]
     
-class DeviceManager:
-    
-    def __init__(self):
-        self.devices = []
-        
-    def addDevice(self,device):
-        self.devices.append(device)
-        return len(self.devices) - 1
-    
-    def removeDevice(self,id):
-        self.devices[id] = []
-        
-    def getDevice(self, id):
-        return self.devices[id]
-    
 class CallbackManager:
 
     def __init__(self):
@@ -160,12 +158,14 @@ class CallbackManager:
             return self.callbacks[address](message)
         except KeyError, e:
             print "key not found"
+            return -1
             # address not found
             pass
         except None, e:
             print "Exception in", address, "callback :", e
+            return -2
         
-        return
+        return 0
 
     def add(self, callback, name):
         """Adds a callback to our set of callbacks,

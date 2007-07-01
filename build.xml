@@ -1,16 +1,15 @@
 <project name="LiveModel" default="copyUtils" basedir=".">
 
 	<property name="telnetDir" value="C:\Program Files\Ableton\Live 6.0.7\Resources\MIDI Remote Scripts\LiveTelnet"/>
+	<property name="flashDir" value="C:\Program Files\Ableton\Live 6.0.7\Resources\MIDI Remote Scripts\LiveFlash"/>
 	
 	<target name="copyUtils">
-		<copy todir="${telnetDir}">
-			<fileset dir="src/util"/>
-		</copy>
+		<copy todir="${telnetDir}" file="src/util/WrapperGen.py"/>
 	</target>
 	
-	<target name="copyDevices">
-		<copy todir="${telnetDir}">
-			<fileset dir="src/devices"/>
+	<target name="LiveFlash">
+		<copy todir="${flashDir}">
+			<fileset dir="src/" includes="*.py"/>
 		</copy>
 	</target>
 </project>
