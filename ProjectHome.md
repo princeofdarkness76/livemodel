@@ -1,0 +1,1 @@
+Python object model for Ableton Live to allow access to live's devices.
